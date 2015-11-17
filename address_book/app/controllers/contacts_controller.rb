@@ -36,4 +36,9 @@ class ContactsController < ApplicationController
     redirect_to("/favorites")
   end
 
+  def search
+    letter = params[:letter]
+    @contacts = Contact.where("name LIKE '#{letter}%'")
+  end
+
 end

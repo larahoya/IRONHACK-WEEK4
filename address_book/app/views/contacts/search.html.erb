@@ -1,0 +1,11 @@
+<h1>Result of the search</h1>
+
+<ul>
+  <% if @contacts.empty? %>
+    <p>No results found</p>
+  <% else %>
+    <% @contacts.each do |contact| %>
+      <li><a href="/contacts/<%= contact.id %>"><%= contact.name %></a></li>
+    <% end %>
+  <% end %>
+</ul>

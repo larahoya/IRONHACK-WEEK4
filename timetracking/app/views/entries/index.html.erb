@@ -1,0 +1,7 @@
+<h1><%= @project.name %></h1>
+<ul>
+<% @project.entries.each do |entry| %>
+  <li><%= entry.hours %>:<%= entry.minutes %> , <%= entry.date.strftime("%d/%m/%y") %><br>
+      <%= entry.comment %></li>
+<% end %>
+</ul>

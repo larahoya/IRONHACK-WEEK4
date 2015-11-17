@@ -6,3 +6,8 @@
   <% end %>
 </ul>
 <a href="/contacts/new">Add a new contact</a>
+<form action="/contacts/search" method="POST">
+  <input type="text" placeholder="letter" name="letter">
+  <button type="submit">Search</button>
+  <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token %>">
+</form>

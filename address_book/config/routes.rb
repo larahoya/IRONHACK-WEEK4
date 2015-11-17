@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   get '/contacts/:id' => 'contacts#show'
   get '/favorites/:id' => 'contacts#add_favorite'
   get '/favorites' => 'contacts#favorites'
+  post '/contacts/search' => 'contacts#search'
 end
