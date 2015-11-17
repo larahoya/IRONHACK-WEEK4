@@ -1,0 +1,8 @@
+<h1>Enter url</h1>
+<form action="/create" method="POST">
+  <input type="text" placeholder="enter your url" name="url">
+  <button type="submit">Go</button>
+  <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token %>">
+</form>
+
+<a href="/most_visited_pages">Most visited pages</a>
