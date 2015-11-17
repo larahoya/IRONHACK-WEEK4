@@ -1381,3 +1381,930 @@ Processing by ProjectsController#show as HTML
 Tried to access {"controller"=>"projects", "action"=>"show", "id"=>"510"} which did not exist.
   Rendered layouts/404.html.erb within layouts/application (0.9ms)
 Completed 200 OK in 211ms (Views: 202.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/510" for ::1 at 2015-11-17 09:46:59 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"510"}
+  [1m[35mProject Load (0.2ms)[0m  SELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1  [["id", 510]]
+Tried to access {"controller"=>"projects", "action"=>"show", "id"=>"510"} which did not exist.
+  Rendered layouts/404.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 221ms (Views: 211.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/site.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-17 09:46:59 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-17 09:46:59 +0100
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-17 09:46:59 +0100
+
+
+Started GET "/assets/projects.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-17 09:46:59 +0100
+
+
+Started GET "/assets/projects.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-17 09:46:59 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-17 09:46:59 +0100
+
+
+Started GET "/assets/site.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-17 09:46:59 +0100
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-11-17 09:46:59 +0100
+
+
+Started GET "/projects/5" for ::1 at 2015-11-17 10:02:25 +0100
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered projects/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 76ms (Views: 72.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/projects/5" for ::1 at 2015-11-17 10:10:55 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mProject Load (0.3ms)[0m  SELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered projects/show.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 416ms (Views: 379.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/projects.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-17 10:10:56 +0100
+
+
+Started GET "/assets/site.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-17 10:10:56 +0100
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-17 10:10:56 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-17 10:10:56 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-17 10:10:56 +0100
+
+
+Started GET "/assets/projects.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-17 10:10:56 +0100
+
+
+Started GET "/assets/site.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-17 10:10:56 +0100
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-11-17 10:10:56 +0100
+
+
+Started GET "/projects" for ::1 at 2015-11-17 10:12:19 +0100
+Processing by ProjectsController#index as HTML
+  Rendered projects/no_projects.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 31ms (Views: 29.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/projects" for ::1 at 2015-11-17 10:35:46 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProjectsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "projects" LIMIT 10) subquery_for_count
+  [1m[36mProject Load (0.5ms)[0m  [1mSELECT  "projects".* FROM "projects"  ORDER BY created_at DESC LIMIT 10[0m
+  Rendered projects/index.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 372ms (Views: 363.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/projects.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-17 10:35:47 +0100
+
+
+Started GET "/assets/site.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-17 10:35:47 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-17 10:35:47 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-17 10:35:48 +0100
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-17 10:35:48 +0100
+
+
+Started GET "/assets/projects.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-17 10:35:48 +0100
+
+
+Started GET "/assets/site.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-17 10:35:48 +0100
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-11-17 10:35:48 +0100
+
+
+Started GET "/projects/4" for ::1 at 2015-11-17 10:36:07 +0100
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mProject Load (0.4ms)[0m  SELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered projects/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 62ms (Views: 39.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/projects/4" for ::1 at 2015-11-17 10:36:48 +0100
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1[0m  [["id", 4]]
+  Rendered projects/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 27ms (Views: 26.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/projects.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-17 10:36:48 +0100
+
+
+Started GET "/assets/site.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-11-17 10:36:48 +0100
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-11-17 10:36:48 +0100
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-11-17 10:36:48 +0100
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-11-17 10:36:48 +0100
+
+
+Started GET "/assets/projects.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-17 10:36:48 +0100
+
+
+Started GET "/assets/site.self-19a187bec6cdb96d6de80a61c16c857c613536adf9138476bd367db38d282635.js?body=1" for ::1 at 2015-11-17 10:36:48 +0100
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2015-11-17 10:36:48 +0100
+
+
+Started GET "/projects" for ::1 at 2015-11-17 10:36:55 +0100
+Processing by ProjectsController#index as HTML
+  [1m[35m (0.2ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM "projects" LIMIT 10) subquery_for_count
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT  "projects".* FROM "projects"  ORDER BY created_at DESC LIMIT 10[0m
+  Rendered projects/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 29ms (Views: 27.0ms | ActiveRecord: 0.5ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateEntries (20151117102754)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20151117102754"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (3.3ms)[0m  [1mCREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (3.4ms)[0m  CREATE TABLE "projects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "description" varchar) 
+  [1m[36m (2.7ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (3.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.2ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (3.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20151117102754')[0m
+  [1m[35m (3.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20151116102416')
+  [1m[36m (3.9ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20151116154905')[0m
+  [1m[35m (3.4ms)[0m  CREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (3.2ms)[0m  [1mCREATE TABLE "projects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "description" varchar) [0m
+  [1m[35m (3.4ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (3.4ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.2ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (3.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20151117102754')
+  [1m[36m (3.9ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20151116102416')[0m
+  [1m[35m (3.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20151116154905')
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Project 1"], ["description", "Description of the project 1"], ["created_at", "2015-11-17 10:39:01.946364"], ["updated_at", "2015-11-17 10:39:01.946364"]]
+  [1m[35m (2.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Project 2"], ["description", "Description of the project 2"], ["created_at", "2015-11-17 10:39:01.954453"], ["updated_at", "2015-11-17 10:39:01.954453"]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Project 3"], ["description", "Description of the project 3"], ["created_at", "2015-11-17 10:39:01.959116"], ["updated_at", "2015-11-17 10:39:01.959116"]]
+  [1m[35m (2.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Project 4"], ["description", "Description of the project 4"], ["created_at", "2015-11-17 10:39:01.964412"], ["updated_at", "2015-11-17 10:39:01.964412"]]
+  [1m[36m (2.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Project 5"], ["description", "Description of the project 5"], ["created_at", "2015-11-17 10:39:01.969830"], ["updated_at", "2015-11-17 10:39:01.969830"]]
+  [1m[35m (2.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Project 6"], ["description", "Description of the project 6"], ["created_at", "2015-11-17 10:39:01.975206"], ["updated_at", "2015-11-17 10:39:01.975206"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Project 7"], ["description", "Description of the project 7"], ["created_at", "2015-11-17 10:39:01.980279"], ["updated_at", "2015-11-17 10:39:01.980279"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Project 8"], ["description", "Description of the project 8"], ["created_at", "2015-11-17 10:39:01.985501"], ["updated_at", "2015-11-17 10:39:01.985501"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Project 9"], ["description", "Description of the project 9"], ["created_at", "2015-11-17 10:39:01.990642"], ["updated_at", "2015-11-17 10:39:01.990642"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Project 10"], ["description", "Description of the project 10"], ["created_at", "2015-11-17 10:39:01.995780"], ["updated_at", "2015-11-17 10:39:01.995780"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Project 11"], ["description", "Description of the project 11"], ["created_at", "2015-11-17 10:39:02.000938"], ["updated_at", "2015-11-17 10:39:02.000938"]]
+  [1m[35m (5.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Project 12"], ["description", "Description of the project 12"], ["created_at", "2015-11-17 10:39:02.008881"], ["updated_at", "2015-11-17 10:39:02.008881"]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Project 13"], ["description", "Description of the project 13"], ["created_at", "2015-11-17 10:39:02.014075"], ["updated_at", "2015-11-17 10:39:02.014075"]]
+  [1m[35m (2.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Project 14"], ["description", "Description of the project 14"], ["created_at", "2015-11-17 10:39:02.019267"], ["updated_at", "2015-11-17 10:39:02.019267"]]
+  [1m[36m (2.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Project 15"], ["description", "Description of the project 15"], ["created_at", "2015-11-17 10:39:02.024413"], ["updated_at", "2015-11-17 10:39:02.024413"]]
+  [1m[35m (2.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Project 16"], ["description", "Description of the project 16"], ["created_at", "2015-11-17 10:39:02.029992"], ["updated_at", "2015-11-17 10:39:02.029992"]]
+  [1m[36m (2.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Project 17"], ["description", "Description of the project 17"], ["created_at", "2015-11-17 10:39:02.035238"], ["updated_at", "2015-11-17 10:39:02.035238"]]
+  [1m[35m (2.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Project 18"], ["description", "Description of the project 18"], ["created_at", "2015-11-17 10:39:02.040652"], ["updated_at", "2015-11-17 10:39:02.040652"]]
+  [1m[36m (2.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Project 19"], ["description", "Description of the project 19"], ["created_at", "2015-11-17 10:39:02.045593"], ["updated_at", "2015-11-17 10:39:02.045593"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Project 20"], ["description", "Description of the project 20"], ["created_at", "2015-11-17 10:39:02.050614"], ["updated_at", "2015-11-17 10:39:02.050614"]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Project 21"], ["description", "Description of the project 21"], ["created_at", "2015-11-17 10:39:02.056249"], ["updated_at", "2015-11-17 10:39:02.056249"]]
+  [1m[35m (2.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Project 22"], ["description", "Description of the project 22"], ["created_at", "2015-11-17 10:39:02.061240"], ["updated_at", "2015-11-17 10:39:02.061240"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Project 23"], ["description", "Description of the project 23"], ["created_at", "2015-11-17 10:39:02.066209"], ["updated_at", "2015-11-17 10:39:02.066209"]]
+  [1m[35m (2.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Project 24"], ["description", "Description of the project 24"], ["created_at", "2015-11-17 10:39:02.071385"], ["updated_at", "2015-11-17 10:39:02.071385"]]
+  [1m[36m (3.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Project 25"], ["description", "Description of the project 25"], ["created_at", "2015-11-17 10:39:02.076921"], ["updated_at", "2015-11-17 10:39:02.076921"]]
+  [1m[35m (2.7ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateEntries (20151117102754)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  DROP TABLE "entries"
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20151117102754"]]
+  [1m[35m (2.3ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateEntries (20151117102754)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "project_id" integer, "hours" integer, "minutes" integer, "comment" text, "date" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20151117102754"]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateEntries (20151117102754)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  DROP TABLE "entries"
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20151117102754"]]
+  [1m[35m (2.4ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (2.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateEntries (20151117102754)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (2.7ms)[0m  [1mCREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "project_id" integer, "hours" integer, "minutes" integer, "comment" text, "date" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.5ms)[0m  select sqlite_version(*)
+  [1m[36m (0.2ms)[0m  [1mCREATE  INDEX "index_entries_on_project_id" ON "entries" ("project_id")[0m
+  [1m[35mSQL (2.5ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20151117102754"]]
+  [1m[36m (3.5ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.3ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_entries_on_project_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_entries_on_project_id' AND type='index'
+[0m
+  [1m[36mProject Load (2.3ms)[0m  [1mSELECT  "projects".* FROM "projects"  ORDER BY "projects"."id" ASC LIMIT 1[0m
+  [1m[35mEntry Load (2.6ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."project_id" = ?  [["project_id", 1]]
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "entries" WHERE "entries"."project_id" = ?[0m  [["project_id", 1]]
+  [1m[35mProject Load (0.3ms)[0m  SELECT  "projects".* FROM "projects"  ORDER BY "projects"."id" ASC LIMIT 1
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT  "projects".* FROM "projects"  ORDER BY "projects"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (3.0ms)[0m  [1mINSERT INTO "entries" ("hours", "minutes", "project_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["hours", 0], ["minutes", 32], ["project_id", 1], ["created_at", "2015-11-17 11:08:38.132854"], ["updated_at", "2015-11-17 11:08:38.132854"]]
+  [1m[35m (3.4ms)[0m  commit transaction
+  [1m[36mProject Load (0.4ms)[0m  [1mSELECT  "projects".* FROM "projects"  ORDER BY "projects"."id" ASC LIMIT 1[0m
+  [1m[35mEntry Load (0.2ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."project_id" = ?  [["project_id", 1]]
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT  "projects".* FROM "projects"  ORDER BY "projects"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "entries" ("hours", "minutes", "project_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["hours", 1], ["minutes", 0], ["project_id", 1], ["created_at", "2015-11-17 11:18:25.115314"], ["updated_at", "2015-11-17 11:18:25.115314"]]
+  [1m[35m (2.7ms)[0m  commit transaction
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "entries" WHERE "entries"."project_id" = ?[0m  [["project_id", 1]]
+  [1m[35mEntry Load (0.2ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."project_id" = ?  [["project_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "entries" ("project_id", "hours", "minutes", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["project_id", 1], ["hours", 0], ["minutes", 45], ["created_at", "2015-11-17 11:22:42.941666"], ["updated_at", "2015-11-17 11:22:42.941666"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "entries" WHERE "entries"."project_id" = ?  [["project_id", 1]]
+  [1m[36m (3.3ms)[0m  [1mCREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "project_id" integer, "hours" integer, "minutes" integer, "comment" text, "date" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (2.9ms)[0m  [1mCREATE  INDEX "index_entries_on_project_id" ON "entries" ("project_id")[0m
+  [1m[35m (3.1ms)[0m  CREATE TABLE "projects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "description" varchar) 
+  [1m[36m (3.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (3.2ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.2ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (3.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20151117102754')
+  [1m[36m (3.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20151116102416')[0m
+  [1m[35m (3.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20151116154905')
+  [1m[36m (3.3ms)[0m  [1mCREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "project_id" integer, "hours" integer, "minutes" integer, "comment" text, "date" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (2.8ms)[0m  [1mCREATE  INDEX "index_entries_on_project_id" ON "entries" ("project_id")[0m
+  [1m[35m (3.5ms)[0m  CREATE TABLE "projects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "description" varchar) 
+  [1m[36m (3.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (3.3ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.3ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (3.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20151117102754')
+  [1m[36m (1.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20151116102416')[0m
+  [1m[35m (1.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20151116154905')
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Project 1"], ["description", "Description of the project 1"], ["created_at", "2015-11-17 11:38:00.659497"], ["updated_at", "2015-11-17 11:38:00.659497"]]
+  [1m[35m (2.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Project 2"], ["description", "Description of the project 2"], ["created_at", "2015-11-17 11:38:00.669663"], ["updated_at", "2015-11-17 11:38:00.669663"]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Project 3"], ["description", "Description of the project 3"], ["created_at", "2015-11-17 11:38:00.674951"], ["updated_at", "2015-11-17 11:38:00.674951"]]
+  [1m[35m (2.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Project 4"], ["description", "Description of the project 4"], ["created_at", "2015-11-17 11:38:00.679575"], ["updated_at", "2015-11-17 11:38:00.679575"]]
+  [1m[36m (3.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Project 5"], ["description", "Description of the project 5"], ["created_at", "2015-11-17 11:38:00.684795"], ["updated_at", "2015-11-17 11:38:00.684795"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Project 6"], ["description", "Description of the project 6"], ["created_at", "2015-11-17 11:38:00.689519"], ["updated_at", "2015-11-17 11:38:00.689519"]]
+  [1m[36m (2.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Project 7"], ["description", "Description of the project 7"], ["created_at", "2015-11-17 11:38:00.695628"], ["updated_at", "2015-11-17 11:38:00.695628"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Project 8"], ["description", "Description of the project 8"], ["created_at", "2015-11-17 11:38:00.701055"], ["updated_at", "2015-11-17 11:38:00.701055"]]
+  [1m[36m (3.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Project 9"], ["description", "Description of the project 9"], ["created_at", "2015-11-17 11:38:00.707364"], ["updated_at", "2015-11-17 11:38:00.707364"]]
+  [1m[35m (2.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Project 10"], ["description", "Description of the project 10"], ["created_at", "2015-11-17 11:38:00.712865"], ["updated_at", "2015-11-17 11:38:00.712865"]]
+  [1m[36m (3.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Project 11"], ["description", "Description of the project 11"], ["created_at", "2015-11-17 11:38:00.719234"], ["updated_at", "2015-11-17 11:38:00.719234"]]
+  [1m[35m (2.8ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Project 12"], ["description", "Description of the project 12"], ["created_at", "2015-11-17 11:38:00.724828"], ["updated_at", "2015-11-17 11:38:00.724828"]]
+  [1m[36m (2.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Project 13"], ["description", "Description of the project 13"], ["created_at", "2015-11-17 11:38:00.730651"], ["updated_at", "2015-11-17 11:38:00.730651"]]
+  [1m[35m (2.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Project 14"], ["description", "Description of the project 14"], ["created_at", "2015-11-17 11:38:00.736263"], ["updated_at", "2015-11-17 11:38:00.736263"]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Project 15"], ["description", "Description of the project 15"], ["created_at", "2015-11-17 11:38:00.742243"], ["updated_at", "2015-11-17 11:38:00.742243"]]
+  [1m[35m (3.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Project 16"], ["description", "Description of the project 16"], ["created_at", "2015-11-17 11:38:00.747980"], ["updated_at", "2015-11-17 11:38:00.747980"]]
+  [1m[36m (2.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Project 17"], ["description", "Description of the project 17"], ["created_at", "2015-11-17 11:38:00.754049"], ["updated_at", "2015-11-17 11:38:00.754049"]]
+  [1m[35m (2.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Project 18"], ["description", "Description of the project 18"], ["created_at", "2015-11-17 11:38:00.759623"], ["updated_at", "2015-11-17 11:38:00.759623"]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Project 19"], ["description", "Description of the project 19"], ["created_at", "2015-11-17 11:38:00.765610"], ["updated_at", "2015-11-17 11:38:00.765610"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Project 20"], ["description", "Description of the project 20"], ["created_at", "2015-11-17 11:38:00.771077"], ["updated_at", "2015-11-17 11:38:00.771077"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Project 21"], ["description", "Description of the project 21"], ["created_at", "2015-11-17 11:38:00.777123"], ["updated_at", "2015-11-17 11:38:00.777123"]]
+  [1m[35m (5.2ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Project 22"], ["description", "Description of the project 22"], ["created_at", "2015-11-17 11:38:00.785488"], ["updated_at", "2015-11-17 11:38:00.785488"]]
+  [1m[36m (2.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Project 23"], ["description", "Description of the project 23"], ["created_at", "2015-11-17 11:38:00.790783"], ["updated_at", "2015-11-17 11:38:00.790783"]]
+  [1m[35m (2.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Project 24"], ["description", "Description of the project 24"], ["created_at", "2015-11-17 11:38:00.805202"], ["updated_at", "2015-11-17 11:38:00.805202"]]
+  [1m[36m (2.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Project 25"], ["description", "Description of the project 25"], ["created_at", "2015-11-17 11:38:00.809551"], ["updated_at", "2015-11-17 11:38:00.809551"]]
+  [1m[35m (5.2ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "entries" ("project_id", "hours", "minutes", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["project_id", 1], ["hours", 0], ["minutes", 1], ["created_at", "2015-11-17 11:38:00.839301"], ["updated_at", "2015-11-17 11:38:00.839301"]]
+  [1m[36m (2.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "entries" ("project_id", "hours", "minutes", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["project_id", 2], ["hours", 0], ["minutes", 2], ["created_at", "2015-11-17 11:38:00.844802"], ["updated_at", "2015-11-17 11:38:00.844802"]]
+  [1m[35m (2.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "entries" ("project_id", "hours", "minutes", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["project_id", 3], ["hours", 0], ["minutes", 3], ["created_at", "2015-11-17 11:38:00.850668"], ["updated_at", "2015-11-17 11:38:00.850668"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "entries" ("project_id", "hours", "minutes", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["project_id", 4], ["hours", 0], ["minutes", 4], ["created_at", "2015-11-17 11:38:00.856704"], ["updated_at", "2015-11-17 11:38:00.856704"]]
+  [1m[35m (2.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "entries" ("project_id", "hours", "minutes", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["project_id", 5], ["hours", 0], ["minutes", 5], ["created_at", "2015-11-17 11:38:00.862557"], ["updated_at", "2015-11-17 11:38:00.862557"]]
+  [1m[36m (2.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "entries" ("project_id", "hours", "minutes", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["project_id", 6], ["hours", 0], ["minutes", 6], ["created_at", "2015-11-17 11:38:00.868511"], ["updated_at", "2015-11-17 11:38:00.868511"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "entries" ("project_id", "hours", "minutes", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["project_id", 7], ["hours", 0], ["minutes", 7], ["created_at", "2015-11-17 11:38:00.873981"], ["updated_at", "2015-11-17 11:38:00.873981"]]
+  [1m[36m (2.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "entries" ("project_id", "hours", "minutes", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["project_id", 8], ["hours", 0], ["minutes", 8], ["created_at", "2015-11-17 11:38:00.880167"], ["updated_at", "2015-11-17 11:38:00.880167"]]
+  [1m[35m (2.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "entries" ("project_id", "hours", "minutes", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["project_id", 9], ["hours", 0], ["minutes", 9], ["created_at", "2015-11-17 11:38:00.885086"], ["updated_at", "2015-11-17 11:38:00.885086"]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "entries" ("project_id", "hours", "minutes", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["project_id", 10], ["hours", 0], ["minutes", 10], ["created_at", "2015-11-17 11:38:00.889593"], ["updated_at", "2015-11-17 11:38:00.889593"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "entries" ("project_id", "hours", "minutes", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["project_id", 11], ["hours", 0], ["minutes", 11], ["created_at", "2015-11-17 11:38:00.894470"], ["updated_at", "2015-11-17 11:38:00.894470"]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "entries" ("project_id", "hours", "minutes", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["project_id", 12], ["hours", 0], ["minutes", 12], ["created_at", "2015-11-17 11:38:00.900486"], ["updated_at", "2015-11-17 11:38:00.900486"]]
+  [1m[35m (2.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "entries" ("project_id", "hours", "minutes", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["project_id", 13], ["hours", 0], ["minutes", 13], ["created_at", "2015-11-17 11:38:00.905328"], ["updated_at", "2015-11-17 11:38:00.905328"]]
+  [1m[36m (2.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "entries" ("project_id", "hours", "minutes", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["project_id", 14], ["hours", 0], ["minutes", 14], ["created_at", "2015-11-17 11:38:00.910736"], ["updated_at", "2015-11-17 11:38:00.910736"]]
+  [1m[35m (2.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "entries" ("project_id", "hours", "minutes", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["project_id", 15], ["hours", 0], ["minutes", 15], ["created_at", "2015-11-17 11:38:00.916599"], ["updated_at", "2015-11-17 11:38:00.916599"]]
+  [1m[36m (2.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "entries" ("project_id", "hours", "minutes", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["project_id", 16], ["hours", 0], ["minutes", 16], ["created_at", "2015-11-17 11:38:00.921501"], ["updated_at", "2015-11-17 11:38:00.921501"]]
+  [1m[35m (2.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "entries" ("project_id", "hours", "minutes", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["project_id", 17], ["hours", 0], ["minutes", 17], ["created_at", "2015-11-17 11:38:00.926733"], ["updated_at", "2015-11-17 11:38:00.926733"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "entries" ("project_id", "hours", "minutes", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["project_id", 18], ["hours", 0], ["minutes", 18], ["created_at", "2015-11-17 11:38:00.931423"], ["updated_at", "2015-11-17 11:38:00.931423"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "entries" ("project_id", "hours", "minutes", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["project_id", 19], ["hours", 0], ["minutes", 19], ["created_at", "2015-11-17 11:38:00.936320"], ["updated_at", "2015-11-17 11:38:00.936320"]]
+  [1m[36m (2.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "entries" ("project_id", "hours", "minutes", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["project_id", 20], ["hours", 0], ["minutes", 20], ["created_at", "2015-11-17 11:38:00.941377"], ["updated_at", "2015-11-17 11:38:00.941377"]]
+  [1m[35m (2.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "entries" ("project_id", "hours", "minutes", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["project_id", 21], ["hours", 0], ["minutes", 21], ["created_at", "2015-11-17 11:38:00.945961"], ["updated_at", "2015-11-17 11:38:00.945961"]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "entries" ("project_id", "hours", "minutes", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["project_id", 22], ["hours", 0], ["minutes", 22], ["created_at", "2015-11-17 11:38:00.950263"], ["updated_at", "2015-11-17 11:38:00.950263"]]
+  [1m[35m (2.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "entries" ("project_id", "hours", "minutes", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["project_id", 23], ["hours", 0], ["minutes", 23], ["created_at", "2015-11-17 11:38:00.954765"], ["updated_at", "2015-11-17 11:38:00.954765"]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "entries" ("project_id", "hours", "minutes", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["project_id", 24], ["hours", 0], ["minutes", 24], ["created_at", "2015-11-17 11:38:00.959513"], ["updated_at", "2015-11-17 11:38:00.959513"]]
+  [1m[35m (2.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "entries" ("project_id", "hours", "minutes", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["project_id", 25], ["hours", 0], ["minutes", 25], ["created_at", "2015-11-17 11:38:00.965247"], ["updated_at", "2015-11-17 11:38:00.965247"]]
+  [1m[36m (2.5ms)[0m  [1mcommit transaction[0m
+  [1m[36mProject Load (0.1ms)[0m  [1mSELECT  "projects".* FROM "projects"  ORDER BY "projects"."id" ASC LIMIT 1[0m
+  [1m[35mProject Load (0.2ms)[0m  SELECT  "projects".* FROM "projects"  ORDER BY "projects"."id" ASC LIMIT 1
+  [1m[36mEntry Load (0.2ms)[0m  [1mSELECT "entries".* FROM "entries" WHERE "entries"."project_id" = ?[0m  [["project_id", 1]]
+  [1m[36m (2.9ms)[0m  [1mCREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "project_id" integer, "hours" integer, "minutes" integer, "comment" text, "date" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.3ms)[0m  select sqlite_version(*)
+  [1m[36m (2.8ms)[0m  [1mCREATE  INDEX "index_entries_on_project_id" ON "entries" ("project_id")[0m
+  [1m[35m (3.1ms)[0m  CREATE TABLE "projects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "description" varchar) 
+  [1m[36m (2.7ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (3.1ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.2ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (3.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20151117102754')
+  [1m[36m (3.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20151116102416')[0m
+  [1m[35m (3.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20151116154905')
+  [1m[36m (3.1ms)[0m  [1mCREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "project_id" integer, "hours" integer, "minutes" integer, "comment" text, "date" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (3.1ms)[0m  [1mCREATE  INDEX "index_entries_on_project_id" ON "entries" ("project_id")[0m
+  [1m[35m (3.1ms)[0m  CREATE TABLE "projects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "description" varchar) 
+  [1m[36m (3.3ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (3.4ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.2ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (3.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20151117102754')
+  [1m[36m (1.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20151116102416')[0m
+  [1m[35m (1.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20151116154905')
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Project 1"], ["description", "Description of the project 1"], ["created_at", "2015-11-17 11:39:31.406678"], ["updated_at", "2015-11-17 11:39:31.406678"]]
+  [1m[35m (2.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Project 2"], ["description", "Description of the project 2"], ["created_at", "2015-11-17 11:39:31.413704"], ["updated_at", "2015-11-17 11:39:31.413704"]]
+  [1m[36m (2.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Project 3"], ["description", "Description of the project 3"], ["created_at", "2015-11-17 11:39:31.418870"], ["updated_at", "2015-11-17 11:39:31.418870"]]
+  [1m[35m (2.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Project 4"], ["description", "Description of the project 4"], ["created_at", "2015-11-17 11:39:31.423862"], ["updated_at", "2015-11-17 11:39:31.423862"]]
+  [1m[36m (2.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Project 5"], ["description", "Description of the project 5"], ["created_at", "2015-11-17 11:39:31.429481"], ["updated_at", "2015-11-17 11:39:31.429481"]]
+  [1m[35m (2.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Project 6"], ["description", "Description of the project 6"], ["created_at", "2015-11-17 11:39:31.434358"], ["updated_at", "2015-11-17 11:39:31.434358"]]
+  [1m[36m (5.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Project 7"], ["description", "Description of the project 7"], ["created_at", "2015-11-17 11:39:31.441885"], ["updated_at", "2015-11-17 11:39:31.441885"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Project 8"], ["description", "Description of the project 8"], ["created_at", "2015-11-17 11:39:31.447123"], ["updated_at", "2015-11-17 11:39:31.447123"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Project 9"], ["description", "Description of the project 9"], ["created_at", "2015-11-17 11:39:31.452246"], ["updated_at", "2015-11-17 11:39:31.452246"]]
+  [1m[35m (2.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Project 10"], ["description", "Description of the project 10"], ["created_at", "2015-11-17 11:39:31.457948"], ["updated_at", "2015-11-17 11:39:31.457948"]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Project 11"], ["description", "Description of the project 11"], ["created_at", "2015-11-17 11:39:31.463365"], ["updated_at", "2015-11-17 11:39:31.463365"]]
+  [1m[35m (2.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Project 12"], ["description", "Description of the project 12"], ["created_at", "2015-11-17 11:39:31.468812"], ["updated_at", "2015-11-17 11:39:31.468812"]]
+  [1m[36m (3.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Project 13"], ["description", "Description of the project 13"], ["created_at", "2015-11-17 11:39:31.474799"], ["updated_at", "2015-11-17 11:39:31.474799"]]
+  [1m[35m (2.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Project 14"], ["description", "Description of the project 14"], ["created_at", "2015-11-17 11:39:31.480151"], ["updated_at", "2015-11-17 11:39:31.480151"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Project 15"], ["description", "Description of the project 15"], ["created_at", "2015-11-17 11:39:31.485423"], ["updated_at", "2015-11-17 11:39:31.485423"]]
+  [1m[35m (3.0ms)[0m  commit transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Project 16"], ["description", "Description of the project 16"], ["created_at", "2015-11-17 11:39:31.491397"], ["updated_at", "2015-11-17 11:39:31.491397"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Project 17"], ["description", "Description of the project 17"], ["created_at", "2015-11-17 11:39:31.496787"], ["updated_at", "2015-11-17 11:39:31.496787"]]
+  [1m[35m (2.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Project 18"], ["description", "Description of the project 18"], ["created_at", "2015-11-17 11:39:31.502105"], ["updated_at", "2015-11-17 11:39:31.502105"]]
+  [1m[36m (2.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Project 19"], ["description", "Description of the project 19"], ["created_at", "2015-11-17 11:39:31.507705"], ["updated_at", "2015-11-17 11:39:31.507705"]]
+  [1m[35m (5.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Project 20"], ["description", "Description of the project 20"], ["created_at", "2015-11-17 11:39:31.515681"], ["updated_at", "2015-11-17 11:39:31.515681"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Project 21"], ["description", "Description of the project 21"], ["created_at", "2015-11-17 11:39:31.520952"], ["updated_at", "2015-11-17 11:39:31.520952"]]
+  [1m[35m (2.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Project 22"], ["description", "Description of the project 22"], ["created_at", "2015-11-17 11:39:31.526180"], ["updated_at", "2015-11-17 11:39:31.526180"]]
+  [1m[36m (2.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Project 23"], ["description", "Description of the project 23"], ["created_at", "2015-11-17 11:39:31.531379"], ["updated_at", "2015-11-17 11:39:31.531379"]]
+  [1m[35m (3.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Project 24"], ["description", "Description of the project 24"], ["created_at", "2015-11-17 11:39:31.548468"], ["updated_at", "2015-11-17 11:39:31.548468"]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Project 25"], ["description", "Description of the project 25"], ["created_at", "2015-11-17 11:39:31.552778"], ["updated_at", "2015-11-17 11:39:31.552778"]]
+  [1m[35m (2.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "entries" ("project_id", "hours", "minutes", "comment", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["project_id", 1], ["hours", 0], ["minutes", 1], ["comment", "1 entry"], ["date", "2015-11-17 00:00:00.000000"], ["created_at", "2015-11-17 11:39:31.570709"], ["updated_at", "2015-11-17 11:39:31.570709"]]
+  [1m[36m (2.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "entries" ("project_id", "hours", "minutes", "comment", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["project_id", 2], ["hours", 0], ["minutes", 2], ["comment", "2 entry"], ["date", "2015-11-17 00:00:00.000000"], ["created_at", "2015-11-17 11:39:31.575832"], ["updated_at", "2015-11-17 11:39:31.575832"]]
+  [1m[35m (2.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "entries" ("project_id", "hours", "minutes", "comment", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["project_id", 3], ["hours", 0], ["minutes", 3], ["comment", "3 entry"], ["date", "2015-11-17 00:00:00.000000"], ["created_at", "2015-11-17 11:39:31.581169"], ["updated_at", "2015-11-17 11:39:31.581169"]]
+  [1m[36m (2.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "entries" ("project_id", "hours", "minutes", "comment", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["project_id", 4], ["hours", 0], ["minutes", 4], ["comment", "4 entry"], ["date", "2015-11-17 00:00:00.000000"], ["created_at", "2015-11-17 11:39:31.587244"], ["updated_at", "2015-11-17 11:39:31.587244"]]
+  [1m[35m (5.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "entries" ("project_id", "hours", "minutes", "comment", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["project_id", 5], ["hours", 0], ["minutes", 5], ["comment", "5 entry"], ["date", "2015-11-17 00:00:00.000000"], ["created_at", "2015-11-17 11:39:31.595525"], ["updated_at", "2015-11-17 11:39:31.595525"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "entries" ("project_id", "hours", "minutes", "comment", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["project_id", 6], ["hours", 0], ["minutes", 6], ["comment", "6 entry"], ["date", "2015-11-17 00:00:00.000000"], ["created_at", "2015-11-17 11:39:31.601702"], ["updated_at", "2015-11-17 11:39:31.601702"]]
+  [1m[35m (2.7ms)[0m  commit transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "entries" ("project_id", "hours", "minutes", "comment", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["project_id", 7], ["hours", 0], ["minutes", 7], ["comment", "7 entry"], ["date", "2015-11-17 00:00:00.000000"], ["created_at", "2015-11-17 11:39:31.608091"], ["updated_at", "2015-11-17 11:39:31.608091"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "entries" ("project_id", "hours", "minutes", "comment", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["project_id", 8], ["hours", 0], ["minutes", 8], ["comment", "8 entry"], ["date", "2015-11-17 00:00:00.000000"], ["created_at", "2015-11-17 11:39:31.614250"], ["updated_at", "2015-11-17 11:39:31.614250"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "entries" ("project_id", "hours", "minutes", "comment", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["project_id", 9], ["hours", 0], ["minutes", 9], ["comment", "9 entry"], ["date", "2015-11-17 00:00:00.000000"], ["created_at", "2015-11-17 11:39:31.620196"], ["updated_at", "2015-11-17 11:39:31.620196"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "entries" ("project_id", "hours", "minutes", "comment", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["project_id", 10], ["hours", 0], ["minutes", 10], ["comment", "10 entry"], ["date", "2015-11-17 00:00:00.000000"], ["created_at", "2015-11-17 11:39:31.626438"], ["updated_at", "2015-11-17 11:39:31.626438"]]
+  [1m[35m (3.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "entries" ("project_id", "hours", "minutes", "comment", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["project_id", 11], ["hours", 0], ["minutes", 11], ["comment", "11 entry"], ["date", "2015-11-17 00:00:00.000000"], ["created_at", "2015-11-17 11:39:31.632880"], ["updated_at", "2015-11-17 11:39:31.632880"]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "entries" ("project_id", "hours", "minutes", "comment", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["project_id", 12], ["hours", 0], ["minutes", 12], ["comment", "12 entry"], ["date", "2015-11-17 00:00:00.000000"], ["created_at", "2015-11-17 11:39:31.639535"], ["updated_at", "2015-11-17 11:39:31.639535"]]
+  [1m[35m (2.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "entries" ("project_id", "hours", "minutes", "comment", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["project_id", 13], ["hours", 0], ["minutes", 13], ["comment", "13 entry"], ["date", "2015-11-17 00:00:00.000000"], ["created_at", "2015-11-17 11:39:31.646208"], ["updated_at", "2015-11-17 11:39:31.646208"]]
+  [1m[36m (2.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "entries" ("project_id", "hours", "minutes", "comment", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["project_id", 14], ["hours", 0], ["minutes", 14], ["comment", "14 entry"], ["date", "2015-11-17 00:00:00.000000"], ["created_at", "2015-11-17 11:39:31.651100"], ["updated_at", "2015-11-17 11:39:31.651100"]]
+  [1m[35m (2.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "entries" ("project_id", "hours", "minutes", "comment", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["project_id", 15], ["hours", 0], ["minutes", 15], ["comment", "15 entry"], ["date", "2015-11-17 00:00:00.000000"], ["created_at", "2015-11-17 11:39:31.655905"], ["updated_at", "2015-11-17 11:39:31.655905"]]
+  [1m[36m (2.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "entries" ("project_id", "hours", "minutes", "comment", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["project_id", 16], ["hours", 0], ["minutes", 16], ["comment", "16 entry"], ["date", "2015-11-17 00:00:00.000000"], ["created_at", "2015-11-17 11:39:31.661085"], ["updated_at", "2015-11-17 11:39:31.661085"]]
+  [1m[35m (2.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "entries" ("project_id", "hours", "minutes", "comment", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["project_id", 17], ["hours", 0], ["minutes", 17], ["comment", "17 entry"], ["date", "2015-11-17 00:00:00.000000"], ["created_at", "2015-11-17 11:39:31.666256"], ["updated_at", "2015-11-17 11:39:31.666256"]]
+  [1m[36m (2.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "entries" ("project_id", "hours", "minutes", "comment", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["project_id", 18], ["hours", 0], ["minutes", 18], ["comment", "18 entry"], ["date", "2015-11-17 00:00:00.000000"], ["created_at", "2015-11-17 11:39:31.671163"], ["updated_at", "2015-11-17 11:39:31.671163"]]
+  [1m[35m (5.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "entries" ("project_id", "hours", "minutes", "comment", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["project_id", 19], ["hours", 0], ["minutes", 19], ["comment", "19 entry"], ["date", "2015-11-17 00:00:00.000000"], ["created_at", "2015-11-17 11:39:31.678919"], ["updated_at", "2015-11-17 11:39:31.678919"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "entries" ("project_id", "hours", "minutes", "comment", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["project_id", 20], ["hours", 0], ["minutes", 20], ["comment", "20 entry"], ["date", "2015-11-17 00:00:00.000000"], ["created_at", "2015-11-17 11:39:31.684563"], ["updated_at", "2015-11-17 11:39:31.684563"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "entries" ("project_id", "hours", "minutes", "comment", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["project_id", 21], ["hours", 0], ["minutes", 21], ["comment", "21 entry"], ["date", "2015-11-17 00:00:00.000000"], ["created_at", "2015-11-17 11:39:31.690309"], ["updated_at", "2015-11-17 11:39:31.690309"]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "entries" ("project_id", "hours", "minutes", "comment", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["project_id", 22], ["hours", 0], ["minutes", 22], ["comment", "22 entry"], ["date", "2015-11-17 00:00:00.000000"], ["created_at", "2015-11-17 11:39:31.696136"], ["updated_at", "2015-11-17 11:39:31.696136"]]
+  [1m[35m (2.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "entries" ("project_id", "hours", "minutes", "comment", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["project_id", 23], ["hours", 0], ["minutes", 23], ["comment", "23 entry"], ["date", "2015-11-17 00:00:00.000000"], ["created_at", "2015-11-17 11:39:31.702107"], ["updated_at", "2015-11-17 11:39:31.702107"]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "entries" ("project_id", "hours", "minutes", "comment", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["project_id", 24], ["hours", 0], ["minutes", 24], ["comment", "24 entry"], ["date", "2015-11-17 00:00:00.000000"], ["created_at", "2015-11-17 11:39:31.707937"], ["updated_at", "2015-11-17 11:39:31.707937"]]
+  [1m[35m (2.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "entries" ("project_id", "hours", "minutes", "comment", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["project_id", 25], ["hours", 0], ["minutes", 25], ["comment", "25 entry"], ["date", "2015-11-17 00:00:00.000000"], ["created_at", "2015-11-17 11:39:31.713737"], ["updated_at", "2015-11-17 11:39:31.713737"]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT  "projects".* FROM "projects"  ORDER BY "projects"."id" ASC LIMIT 1[0m
+  [1m[35mEntry Load (0.2ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."project_id" = ?  [["project_id", 1]]
+  [1m[36m (2.9ms)[0m  [1mCREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "project_id" integer, "hours" integer, "minutes" integer, "comment" text, "date" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (2.6ms)[0m  [1mCREATE  INDEX "index_entries_on_project_id" ON "entries" ("project_id")[0m
+  [1m[35m (2.8ms)[0m  CREATE TABLE "projects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "description" varchar) 
+  [1m[36m (2.6ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (3.9ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.2ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (3.2ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20151117102754')
+  [1m[36m (3.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20151116102416')[0m
+  [1m[35m (3.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20151116154905')
+  [1m[36m (5.9ms)[0m  [1mCREATE TABLE "entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "project_id" integer, "hours" integer, "minutes" integer, "comment" text, "date" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (3.0ms)[0m  [1mCREATE  INDEX "index_entries_on_project_id" ON "entries" ("project_id")[0m
+  [1m[35m (3.2ms)[0m  CREATE TABLE "projects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "description" varchar) 
+  [1m[36m (3.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (3.6ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.2ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (3.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20151117102754')
+  [1m[36m (1.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20151116102416')[0m
+  [1m[35m (1.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20151116154905')
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Project 1"], ["description", "Description of the project 1"], ["created_at", "2015-11-17 11:45:59.375595"], ["updated_at", "2015-11-17 11:45:59.375595"]]
+  [1m[35m (2.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Project 2"], ["description", "Description of the project 2"], ["created_at", "2015-11-17 11:45:59.382999"], ["updated_at", "2015-11-17 11:45:59.382999"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Project 3"], ["description", "Description of the project 3"], ["created_at", "2015-11-17 11:45:59.388348"], ["updated_at", "2015-11-17 11:45:59.388348"]]
+  [1m[35m (2.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Project 4"], ["description", "Description of the project 4"], ["created_at", "2015-11-17 11:45:59.394391"], ["updated_at", "2015-11-17 11:45:59.394391"]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Project 5"], ["description", "Description of the project 5"], ["created_at", "2015-11-17 11:45:59.399817"], ["updated_at", "2015-11-17 11:45:59.399817"]]
+  [1m[35m (2.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Project 6"], ["description", "Description of the project 6"], ["created_at", "2015-11-17 11:45:59.405402"], ["updated_at", "2015-11-17 11:45:59.405402"]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Project 7"], ["description", "Description of the project 7"], ["created_at", "2015-11-17 11:45:59.411060"], ["updated_at", "2015-11-17 11:45:59.411060"]]
+  [1m[35m (2.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Project 8"], ["description", "Description of the project 8"], ["created_at", "2015-11-17 11:45:59.416865"], ["updated_at", "2015-11-17 11:45:59.416865"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Project 9"], ["description", "Description of the project 9"], ["created_at", "2015-11-17 11:45:59.422282"], ["updated_at", "2015-11-17 11:45:59.422282"]]
+  [1m[35m (2.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Project 10"], ["description", "Description of the project 10"], ["created_at", "2015-11-17 11:45:59.428022"], ["updated_at", "2015-11-17 11:45:59.428022"]]
+  [1m[36m (5.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Project 11"], ["description", "Description of the project 11"], ["created_at", "2015-11-17 11:45:59.436255"], ["updated_at", "2015-11-17 11:45:59.436255"]]
+  [1m[35m (2.9ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Project 12"], ["description", "Description of the project 12"], ["created_at", "2015-11-17 11:45:59.442177"], ["updated_at", "2015-11-17 11:45:59.442177"]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Project 13"], ["description", "Description of the project 13"], ["created_at", "2015-11-17 11:45:59.447849"], ["updated_at", "2015-11-17 11:45:59.447849"]]
+  [1m[35m (2.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Project 14"], ["description", "Description of the project 14"], ["created_at", "2015-11-17 11:45:59.453428"], ["updated_at", "2015-11-17 11:45:59.453428"]]
+  [1m[36m (2.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Project 15"], ["description", "Description of the project 15"], ["created_at", "2015-11-17 11:45:59.459083"], ["updated_at", "2015-11-17 11:45:59.459083"]]
+  [1m[35m (2.8ms)[0m  commit transaction
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Project 16"], ["description", "Description of the project 16"], ["created_at", "2015-11-17 11:45:59.464682"], ["updated_at", "2015-11-17 11:45:59.464682"]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Project 17"], ["description", "Description of the project 17"], ["created_at", "2015-11-17 11:45:59.470193"], ["updated_at", "2015-11-17 11:45:59.470193"]]
+  [1m[35m (3.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Project 18"], ["description", "Description of the project 18"], ["created_at", "2015-11-17 11:45:59.476163"], ["updated_at", "2015-11-17 11:45:59.476163"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Project 19"], ["description", "Description of the project 19"], ["created_at", "2015-11-17 11:45:59.481708"], ["updated_at", "2015-11-17 11:45:59.481708"]]
+  [1m[35m (2.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Project 20"], ["description", "Description of the project 20"], ["created_at", "2015-11-17 11:45:59.486561"], ["updated_at", "2015-11-17 11:45:59.486561"]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Project 21"], ["description", "Description of the project 21"], ["created_at", "2015-11-17 11:45:59.491999"], ["updated_at", "2015-11-17 11:45:59.491999"]]
+  [1m[35m (2.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Project 22"], ["description", "Description of the project 22"], ["created_at", "2015-11-17 11:45:59.497814"], ["updated_at", "2015-11-17 11:45:59.497814"]]
+  [1m[36m (2.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Project 23"], ["description", "Description of the project 23"], ["created_at", "2015-11-17 11:45:59.502531"], ["updated_at", "2015-11-17 11:45:59.502531"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Project 24"], ["description", "Description of the project 24"], ["created_at", "2015-11-17 11:45:59.517766"], ["updated_at", "2015-11-17 11:45:59.517766"]]
+  [1m[36m (2.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "projects" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Project 25"], ["description", "Description of the project 25"], ["created_at", "2015-11-17 11:45:59.522007"], ["updated_at", "2015-11-17 11:45:59.522007"]]
+  [1m[35m (2.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "entries" ("project_id", "hours", "minutes", "comment", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["project_id", 19], ["hours", 0], ["minutes", 38], ["comment", "entry 1"], ["date", "2015-11-17 00:00:00.000000"], ["created_at", "2015-11-17 11:45:59.534566"], ["updated_at", "2015-11-17 11:45:59.534566"]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "entries" ("project_id", "hours", "minutes", "comment", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["project_id", 21], ["hours", 0], ["minutes", 33], ["comment", "entry 2"], ["date", "2015-11-17 00:00:00.000000"], ["created_at", "2015-11-17 11:45:59.539434"], ["updated_at", "2015-11-17 11:45:59.539434"]]
+  [1m[35m (2.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "entries" ("project_id", "hours", "minutes", "comment", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["project_id", 16], ["hours", 0], ["minutes", 10], ["comment", "entry 3"], ["date", "2015-11-17 00:00:00.000000"], ["created_at", "2015-11-17 11:45:59.545569"], ["updated_at", "2015-11-17 11:45:59.545569"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "entries" ("project_id", "hours", "minutes", "comment", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["project_id", 6], ["hours", 0], ["minutes", 0], ["comment", "entry 4"], ["date", "2015-11-17 00:00:00.000000"], ["created_at", "2015-11-17 11:45:59.550596"], ["updated_at", "2015-11-17 11:45:59.550596"]]
+  [1m[35m (2.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "entries" ("project_id", "hours", "minutes", "comment", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["project_id", 24], ["hours", 0], ["minutes", 56], ["comment", "entry 5"], ["date", "2015-11-17 00:00:00.000000"], ["created_at", "2015-11-17 11:45:59.555204"], ["updated_at", "2015-11-17 11:45:59.555204"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "entries" ("project_id", "hours", "minutes", "comment", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["project_id", 8], ["hours", 0], ["minutes", 36], ["comment", "entry 6"], ["date", "2015-11-17 00:00:00.000000"], ["created_at", "2015-11-17 11:45:59.560676"], ["updated_at", "2015-11-17 11:45:59.560676"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "entries" ("project_id", "hours", "minutes", "comment", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["project_id", 15], ["hours", 0], ["minutes", 56], ["comment", "entry 7"], ["date", "2015-11-17 00:00:00.000000"], ["created_at", "2015-11-17 11:45:59.566218"], ["updated_at", "2015-11-17 11:45:59.566218"]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "entries" ("project_id", "hours", "minutes", "comment", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["project_id", 10], ["hours", 0], ["minutes", 16], ["comment", "entry 8"], ["date", "2015-11-17 00:00:00.000000"], ["created_at", "2015-11-17 11:45:59.571880"], ["updated_at", "2015-11-17 11:45:59.571880"]]
+  [1m[35m (3.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "entries" ("project_id", "hours", "minutes", "comment", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["project_id", 0], ["hours", 0], ["minutes", 8], ["comment", "entry 9"], ["date", "2015-11-17 00:00:00.000000"], ["created_at", "2015-11-17 11:45:59.577829"], ["updated_at", "2015-11-17 11:45:59.577829"]]
+  [1m[36m (2.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "entries" ("project_id", "hours", "minutes", "comment", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["project_id", 14], ["hours", 0], ["minutes", 27], ["comment", "entry 10"], ["date", "2015-11-17 00:00:00.000000"], ["created_at", "2015-11-17 11:45:59.583214"], ["updated_at", "2015-11-17 11:45:59.583214"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "entries" ("project_id", "hours", "minutes", "comment", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["project_id", 9], ["hours", 0], ["minutes", 24], ["comment", "entry 11"], ["date", "2015-11-17 00:00:00.000000"], ["created_at", "2015-11-17 11:45:59.588714"], ["updated_at", "2015-11-17 11:45:59.588714"]]
+  [1m[36m (5.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "entries" ("project_id", "hours", "minutes", "comment", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["project_id", 7], ["hours", 0], ["minutes", 30], ["comment", "entry 12"], ["date", "2015-11-17 00:00:00.000000"], ["created_at", "2015-11-17 11:45:59.597957"], ["updated_at", "2015-11-17 11:45:59.597957"]]
+  [1m[35m (3.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "entries" ("project_id", "hours", "minutes", "comment", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["project_id", 19], ["hours", 0], ["minutes", 21], ["comment", "entry 13"], ["date", "2015-11-17 00:00:00.000000"], ["created_at", "2015-11-17 11:45:59.604302"], ["updated_at", "2015-11-17 11:45:59.604302"]]
+  [1m[36m (2.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "entries" ("project_id", "hours", "minutes", "comment", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["project_id", 3], ["hours", 0], ["minutes", 47], ["comment", "entry 14"], ["date", "2015-11-17 00:00:00.000000"], ["created_at", "2015-11-17 11:45:59.610366"], ["updated_at", "2015-11-17 11:45:59.610366"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "entries" ("project_id", "hours", "minutes", "comment", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["project_id", 2], ["hours", 0], ["minutes", 55], ["comment", "entry 15"], ["date", "2015-11-17 00:00:00.000000"], ["created_at", "2015-11-17 11:45:59.616346"], ["updated_at", "2015-11-17 11:45:59.616346"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "entries" ("project_id", "hours", "minutes", "comment", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["project_id", 11], ["hours", 0], ["minutes", 24], ["comment", "entry 16"], ["date", "2015-11-17 00:00:00.000000"], ["created_at", "2015-11-17 11:45:59.622218"], ["updated_at", "2015-11-17 11:45:59.622218"]]
+  [1m[35m (2.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "entries" ("project_id", "hours", "minutes", "comment", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["project_id", 13], ["hours", 0], ["minutes", 15], ["comment", "entry 17"], ["date", "2015-11-17 00:00:00.000000"], ["created_at", "2015-11-17 11:45:59.628246"], ["updated_at", "2015-11-17 11:45:59.628246"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "entries" ("project_id", "hours", "minutes", "comment", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["project_id", 22], ["hours", 0], ["minutes", 32], ["comment", "entry 18"], ["date", "2015-11-17 00:00:00.000000"], ["created_at", "2015-11-17 11:45:59.634265"], ["updated_at", "2015-11-17 11:45:59.634265"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "entries" ("project_id", "hours", "minutes", "comment", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["project_id", 19], ["hours", 0], ["minutes", 20], ["comment", "entry 19"], ["date", "2015-11-17 00:00:00.000000"], ["created_at", "2015-11-17 11:45:59.640181"], ["updated_at", "2015-11-17 11:45:59.640181"]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "entries" ("project_id", "hours", "minutes", "comment", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["project_id", 12], ["hours", 0], ["minutes", 38], ["comment", "entry 20"], ["date", "2015-11-17 00:00:00.000000"], ["created_at", "2015-11-17 11:45:59.646275"], ["updated_at", "2015-11-17 11:45:59.646275"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "entries" ("project_id", "hours", "minutes", "comment", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["project_id", 13], ["hours", 0], ["minutes", 49], ["comment", "entry 21"], ["date", "2015-11-17 00:00:00.000000"], ["created_at", "2015-11-17 11:45:59.652170"], ["updated_at", "2015-11-17 11:45:59.652170"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "entries" ("project_id", "hours", "minutes", "comment", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["project_id", 18], ["hours", 0], ["minutes", 44], ["comment", "entry 22"], ["date", "2015-11-17 00:00:00.000000"], ["created_at", "2015-11-17 11:45:59.658113"], ["updated_at", "2015-11-17 11:45:59.658113"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "entries" ("project_id", "hours", "minutes", "comment", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["project_id", 1], ["hours", 0], ["minutes", 24], ["comment", "entry 23"], ["date", "2015-11-17 00:00:00.000000"], ["created_at", "2015-11-17 11:45:59.664125"], ["updated_at", "2015-11-17 11:45:59.664125"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "entries" ("project_id", "hours", "minutes", "comment", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["project_id", 17], ["hours", 0], ["minutes", 57], ["comment", "entry 24"], ["date", "2015-11-17 00:00:00.000000"], ["created_at", "2015-11-17 11:45:59.669979"], ["updated_at", "2015-11-17 11:45:59.669979"]]
+  [1m[35m (2.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "entries" ("project_id", "hours", "minutes", "comment", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["project_id", 16], ["hours", 0], ["minutes", 5], ["comment", "entry 25"], ["date", "2015-11-17 00:00:00.000000"], ["created_at", "2015-11-17 11:45:59.675957"], ["updated_at", "2015-11-17 11:45:59.675957"]]
+  [1m[36m (5.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "entries" ("project_id", "hours", "minutes", "comment", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["project_id", 17], ["hours", 0], ["minutes", 17], ["comment", "entry 26"], ["date", "2015-11-17 00:00:00.000000"], ["created_at", "2015-11-17 11:45:59.684565"], ["updated_at", "2015-11-17 11:45:59.684565"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "entries" ("project_id", "hours", "minutes", "comment", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["project_id", 7], ["hours", 0], ["minutes", 13], ["comment", "entry 27"], ["date", "2015-11-17 00:00:00.000000"], ["created_at", "2015-11-17 11:45:59.690487"], ["updated_at", "2015-11-17 11:45:59.690487"]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "entries" ("project_id", "hours", "minutes", "comment", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["project_id", 6], ["hours", 0], ["minutes", 1], ["comment", "entry 28"], ["date", "2015-11-17 00:00:00.000000"], ["created_at", "2015-11-17 11:45:59.696505"], ["updated_at", "2015-11-17 11:45:59.696505"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "entries" ("project_id", "hours", "minutes", "comment", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["project_id", 7], ["hours", 0], ["minutes", 52], ["comment", "entry 29"], ["date", "2015-11-17 00:00:00.000000"], ["created_at", "2015-11-17 11:45:59.702448"], ["updated_at", "2015-11-17 11:45:59.702448"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "entries" ("project_id", "hours", "minutes", "comment", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["project_id", 19], ["hours", 0], ["minutes", 59], ["comment", "entry 30"], ["date", "2015-11-17 00:00:00.000000"], ["created_at", "2015-11-17 11:45:59.708481"], ["updated_at", "2015-11-17 11:45:59.708481"]]
+  [1m[35m (5.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "entries" ("project_id", "hours", "minutes", "comment", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["project_id", 17], ["hours", 0], ["minutes", 10], ["comment", "entry 31"], ["date", "2015-11-17 00:00:00.000000"], ["created_at", "2015-11-17 11:45:59.716916"], ["updated_at", "2015-11-17 11:45:59.716916"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "entries" ("project_id", "hours", "minutes", "comment", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["project_id", 22], ["hours", 0], ["minutes", 49], ["comment", "entry 32"], ["date", "2015-11-17 00:00:00.000000"], ["created_at", "2015-11-17 11:45:59.723258"], ["updated_at", "2015-11-17 11:45:59.723258"]]
+  [1m[35m (2.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "entries" ("project_id", "hours", "minutes", "comment", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["project_id", 12], ["hours", 0], ["minutes", 21], ["comment", "entry 33"], ["date", "2015-11-17 00:00:00.000000"], ["created_at", "2015-11-17 11:45:59.729446"], ["updated_at", "2015-11-17 11:45:59.729446"]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "entries" ("project_id", "hours", "minutes", "comment", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["project_id", 10], ["hours", 0], ["minutes", 6], ["comment", "entry 34"], ["date", "2015-11-17 00:00:00.000000"], ["created_at", "2015-11-17 11:45:59.735764"], ["updated_at", "2015-11-17 11:45:59.735764"]]
+  [1m[35m (2.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "entries" ("project_id", "hours", "minutes", "comment", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["project_id", 18], ["hours", 0], ["minutes", 55], ["comment", "entry 35"], ["date", "2015-11-17 00:00:00.000000"], ["created_at", "2015-11-17 11:45:59.742242"], ["updated_at", "2015-11-17 11:45:59.742242"]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "entries" ("project_id", "hours", "minutes", "comment", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["project_id", 4], ["hours", 0], ["minutes", 0], ["comment", "entry 36"], ["date", "2015-11-17 00:00:00.000000"], ["created_at", "2015-11-17 11:45:59.748368"], ["updated_at", "2015-11-17 11:45:59.748368"]]
+  [1m[35m (2.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "entries" ("project_id", "hours", "minutes", "comment", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["project_id", 6], ["hours", 0], ["minutes", 21], ["comment", "entry 37"], ["date", "2015-11-17 00:00:00.000000"], ["created_at", "2015-11-17 11:45:59.754407"], ["updated_at", "2015-11-17 11:45:59.754407"]]
+  [1m[36m (2.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "entries" ("project_id", "hours", "minutes", "comment", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["project_id", 8], ["hours", 0], ["minutes", 13], ["comment", "entry 38"], ["date", "2015-11-17 00:00:00.000000"], ["created_at", "2015-11-17 11:45:59.760853"], ["updated_at", "2015-11-17 11:45:59.760853"]]
+  [1m[35m (2.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "entries" ("project_id", "hours", "minutes", "comment", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["project_id", 17], ["hours", 0], ["minutes", 18], ["comment", "entry 39"], ["date", "2015-11-17 00:00:00.000000"], ["created_at", "2015-11-17 11:45:59.766907"], ["updated_at", "2015-11-17 11:45:59.766907"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "entries" ("project_id", "hours", "minutes", "comment", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["project_id", 14], ["hours", 0], ["minutes", 39], ["comment", "entry 40"], ["date", "2015-11-17 00:00:00.000000"], ["created_at", "2015-11-17 11:45:59.773629"], ["updated_at", "2015-11-17 11:45:59.773629"]]
+  [1m[35m (2.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "entries" ("project_id", "hours", "minutes", "comment", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["project_id", 19], ["hours", 0], ["minutes", 23], ["comment", "entry 41"], ["date", "2015-11-17 00:00:00.000000"], ["created_at", "2015-11-17 11:45:59.779029"], ["updated_at", "2015-11-17 11:45:59.779029"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "entries" ("project_id", "hours", "minutes", "comment", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["project_id", 24], ["hours", 0], ["minutes", 55], ["comment", "entry 42"], ["date", "2015-11-17 00:00:00.000000"], ["created_at", "2015-11-17 11:45:59.784516"], ["updated_at", "2015-11-17 11:45:59.784516"]]
+  [1m[35m (2.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "entries" ("project_id", "hours", "minutes", "comment", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["project_id", 10], ["hours", 0], ["minutes", 57], ["comment", "entry 43"], ["date", "2015-11-17 00:00:00.000000"], ["created_at", "2015-11-17 11:45:59.789072"], ["updated_at", "2015-11-17 11:45:59.789072"]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "entries" ("project_id", "hours", "minutes", "comment", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["project_id", 12], ["hours", 0], ["minutes", 34], ["comment", "entry 44"], ["date", "2015-11-17 00:00:00.000000"], ["created_at", "2015-11-17 11:45:59.793629"], ["updated_at", "2015-11-17 11:45:59.793629"]]
+  [1m[35m (2.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "entries" ("project_id", "hours", "minutes", "comment", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["project_id", 0], ["hours", 0], ["minutes", 24], ["comment", "entry 45"], ["date", "2015-11-17 00:00:00.000000"], ["created_at", "2015-11-17 11:45:59.798210"], ["updated_at", "2015-11-17 11:45:59.798210"]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "entries" ("project_id", "hours", "minutes", "comment", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["project_id", 5], ["hours", 0], ["minutes", 42], ["comment", "entry 46"], ["date", "2015-11-17 00:00:00.000000"], ["created_at", "2015-11-17 11:45:59.803103"], ["updated_at", "2015-11-17 11:45:59.803103"]]
+  [1m[35m (2.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "entries" ("project_id", "hours", "minutes", "comment", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["project_id", 21], ["hours", 0], ["minutes", 42], ["comment", "entry 47"], ["date", "2015-11-17 00:00:00.000000"], ["created_at", "2015-11-17 11:45:59.808631"], ["updated_at", "2015-11-17 11:45:59.808631"]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "entries" ("project_id", "hours", "minutes", "comment", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["project_id", 9], ["hours", 0], ["minutes", 54], ["comment", "entry 48"], ["date", "2015-11-17 00:00:00.000000"], ["created_at", "2015-11-17 11:45:59.813321"], ["updated_at", "2015-11-17 11:45:59.813321"]]
+  [1m[35m (2.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "entries" ("project_id", "hours", "minutes", "comment", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["project_id", 17], ["hours", 0], ["minutes", 16], ["comment", "entry 49"], ["date", "2015-11-17 00:00:00.000000"], ["created_at", "2015-11-17 11:45:59.818352"], ["updated_at", "2015-11-17 11:45:59.818352"]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "entries" ("project_id", "hours", "minutes", "comment", "date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["project_id", 21], ["hours", 0], ["minutes", 36], ["comment", "entry 50"], ["date", "2015-11-17 00:00:00.000000"], ["created_at", "2015-11-17 11:45:59.823467"], ["updated_at", "2015-11-17 11:45:59.823467"]]
+  [1m[35m (2.5ms)[0m  commit transaction
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT  "projects".* FROM "projects"  ORDER BY "projects"."id" ASC LIMIT 1[0m
+  [1m[35mEntry Load (0.2ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."project_id" = ?  [["project_id", 1]]
+  [1m[36mProject Load (0.3ms)[0m  [1mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1[0m  [["id", 20]]
+  [1m[35mEntry Load (0.1ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."project_id" = ?  [["project_id", 20]]
+  [1m[36mProject Load (0.2ms)[0m  [1mSELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1[0m  [["id", 20]]
+  [1m[35mEntry Load (0.2ms)[0m  SELECT "entries".* FROM "entries" WHERE "entries"."project_id" = ?  [["project_id", 20]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "entries"[0m
+  [1m[35mProject Load (0.4ms)[0m  SELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1  [["id", 16]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "entries" WHERE "entries"."project_id" = ?[0m  [["project_id", 16]]
+  [1m[35mProject Load (0.2ms)[0m  SELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1  [["id", 6]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "entries" WHERE "entries"."project_id" = ?[0m  [["project_id", 6]]
