@@ -1,0 +1,9 @@
+<h1><%= @contact.name %></h1>
+<p>Address: <%= @contact.address %></p>
+<p>Phone number: <%= @contact.phone %></p>
+<p>Email: <%= @contact.email %></p>
+<form action="/favorites/<%= @contact.id %>" method="GET">
+  <button type='submit'>Add favorite</button>
+  <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token %>">
+</form>
+<a href="/contacts">Index</a>
