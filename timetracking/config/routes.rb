@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   get '/' => 'site#home'
   get '/contact' => 'site#contact'
 
-  resources :project, only: [:index, :show] do
+  resources :projects, only: [:index, :show, :new, :create] do
     resources :entries, only: [:index, :new, :create]
   end
 
