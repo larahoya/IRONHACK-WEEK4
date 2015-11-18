@@ -2,8 +2,11 @@
 <ul>
 <% @entries.each do |entry| %>
   <li><%= entry.hours %>:<%= entry.minutes %> , <%= entry.date.strftime("%d/%m/%y") %><br>
-      <%= entry.comment %></li>
+      <%= entry.comment %><br>
+      <%= link_to('Edit', edit_project_entry_path(@project, entry)) %></li>
 <% end %>
 </ul>
-Total of hours this month: <%= @hours %>
+Total of hours this month: <%= @hours %><br>
+<%= link_to('New entry', new_project_entry_path) %><br>
+<%= link_to('Home', projects_path) %>
 
