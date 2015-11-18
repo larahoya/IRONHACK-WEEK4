@@ -3750,3 +3750,34 @@ Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac
   [1m[35m (10.6ms)[0m  commit transaction
   [1m[36mProject Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "projects" WHERE "projects"."name" = '?' LIMIT 1[0m
   [1m[35mProject Exists (0.3ms)[0m  SELECT  1 AS one FROM "projects" WHERE "projects"."name" = '?' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mProject Exists (0.3ms)[0m  SELECT  1 AS one FROM "projects" WHERE "projects"."name" = '?aa' LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+
+
+Started GET "/projects/19/entries/new" for ::1 at 2015-11-18 12:39:38 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by EntriesController#new as HTML
+  Parameters: {"project_id"=>"19"}
+  [1m[35mProject Load (0.3ms)[0m  SELECT  "projects".* FROM "projects" WHERE "projects"."id" = ? LIMIT 1  [["id", 19]]
+  Rendered entries/new.html.erb within layouts/application (17.9ms)
+Completed 500 Internal Server Error in 113ms (ActiveRecord: 1.3ms)
+
+ActionView::Template::Error (undefined method `project_entries_path' for #<#<Class:0x007fd207db1bf0>:0x007fd207db1150>):
+    1: <%= form_for [@project, @entry] do |f| %>
+    2: <% end %>
+  app/views/entries/new.html.erb:1:in `_app_views_entries_new_html_erb__2090540817250865210_70270025703140'
+
+
+  Rendered /Users/larahoyatrujillo/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.0ms)
+  Rendered /Users/larahoyatrujillo/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/larahoyatrujillo/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (10.0ms)
+  Rendered /Users/larahoyatrujillo/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (67.2ms)
+  Rendered /Users/larahoyatrujillo/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/larahoyatrujillo/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/larahoyatrujillo/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/larahoyatrujillo/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/larahoyatrujillo/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (39.7ms)
+  Rendered /Users/larahoyatrujillo/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/larahoyatrujillo/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/larahoyatrujillo/.rvm/gems/ruby-2.2.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (100.2ms)
