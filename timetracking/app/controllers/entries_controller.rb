@@ -30,7 +30,7 @@ class EntriesController < ApplicationController
   end
 
   def update
-    @project =Project.find(params[:project_id])
+    @project = Project.find(params[:project_id])
     @entry = @project.entries.find(params[:id])
     if @entry.update_attributes(entry_params)
       redirect_to action: 'index', controller: 'entries', project_id: @project.id
@@ -38,6 +38,13 @@ class EntriesController < ApplicationController
       @errors = @entry.errors.full_messages
       render 'edit'
     end
+  end
+
+  def destroy
+    @project = Project.find(params[:project_id])
+    @entry = @project.entries.find(params[:id])
+    @entry.destroy
+    redirect_to action: 'index', controller: 'entries', project_id: @project.id
   end
 
   private

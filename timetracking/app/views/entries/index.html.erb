@@ -1,9 +1,10 @@
 <h1><%= @project.name %></h1>
 <ul>
 <% @entries.each do |entry| %>
-  <li><%= entry.hours %>:<%= entry.minutes %> , <%= entry.date.strftime("%d/%m/%y") %><br>
-      <%= entry.comment %><br>
-      <%= link_to('Edit', edit_project_entry_path(@project, entry)) %></li>
+  <li><%= entry.hours %>:<%= entry.minutes %> , <%= entry.date.strftime("%d/%m/%y") %> - 
+      <%= entry.comment %> 
+      <%= link_to('Edit', edit_project_entry_path(@project, entry)) %>
+      <%= link_to('delete', project_entry_path(@project, entry), method: :delete, data: {confirm: 'Are you sure?'}) %></li>
 <% end %>
 </ul>
 Total of hours this month: <%= @hours %><br>
