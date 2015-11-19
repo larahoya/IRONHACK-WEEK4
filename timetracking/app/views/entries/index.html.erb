@@ -1,3 +1,5 @@
+<%= flash_message %>
+
 <h1><%= @project.name %></h1>
 <ul>
 <% @entries.each do |entry| %>
@@ -7,7 +9,7 @@
       <%= link_to('delete', project_entry_path(@project, entry), method: :delete, data: {confirm: 'Are you sure?'}) %></li>
 <% end %>
 </ul>
-Total of hours this month: <%= @hours %><br>
+Total of hours this month: <%= project_total_hours(@project) %><br>
 <%= link_to('New entry', new_project_entry_path) %><br>
 <%= link_to('Home', projects_path) %>
 
