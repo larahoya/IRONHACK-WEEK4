@@ -1,0 +1,47 @@
+<div>
+  <h4><%= @product.title %></h4>
+  <p><%= @product.description %></p>
+  <p><%= @product.deadline %></p>
+</div>
+
+<%= flash_message %>
+
+<% if @product.active_bid? %>
+
+  <div>
+    <form action="/users/<%= @user.id %>/products/<%= @product.id %>/bids" method='POST'>
+      
+      <label for="email">Email</label>
+      <input type='text' placeholder='email' name="bid[email]" id="email" required>
+      
+      <label for="email">Amount</label>
+      <input type='text' placeholder='amount' name="bid[amount]" id="amount" required>
+      
+      <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token %>">
+      <button type="submit">Go!</button>
+
+    </form>
+  </div>
+
+<% else %>
+
+  <% winner = @product.get_maximum_bid %>
+  <% user = User.find(winner.user_id) %>
+  <div>
+    <p>The winner bid is <%= winner.amount %> of <%= user.name %>!</p>
+  </div>
+
+<% end %>
+
+<% if @product.bids.any? %>
+<div>
+  <ul></ul>
+  <% @product.bids.each do |bid| %>
+    <li><%= User.find(bid.user_id).name %> : <%= bid.amount %></li>
+  <% end %>
+  </ul>
+</div>
+<% end %>
+
+
+<%= link_to(@user.name, user_products_path(@user)) %>

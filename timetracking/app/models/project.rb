@@ -4,6 +4,8 @@ class Project < ActiveRecord::Base
   validates :name, length: {maximum: 30}
   validates :name, format: {with: /\A[a-zA-ZÑñ0-9\ ]+\z/}
   has_many :entries
+  has_many :participations
+  has_many :people, through: :participations
 
   def self.iron_find(params)
     where(params).first

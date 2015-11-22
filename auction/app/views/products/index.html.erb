@@ -1,0 +1,9 @@
+<h2><%= @user.name %></h2>
+
+<ul>
+<% @user_products.each do |product| %>
+  <li><%= link_to(product.title, user_product_path(@user, product)) %></li>
+<% end %>
+</ul>
+
+<%= link_to('Home', products_path) %>

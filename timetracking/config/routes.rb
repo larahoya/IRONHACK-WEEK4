@@ -6,4 +6,6 @@ Rails.application.routes.draw do
     resources :entries, only: [:index, :new, :create, :edit, :update, :destroy]
   end
 
+  resources :people, only: [:new, :create, :show, :update]
+
 end

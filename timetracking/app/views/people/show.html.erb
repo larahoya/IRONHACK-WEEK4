@@ -1,0 +1,18 @@
+<%= @person.name %>
+
+<% if @projects %>
+  <ul>
+    <% @projects.each do |project| %>
+      <li><%= project.name %></li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= form_for [@person] do |f| %>
+  <%= f.label :projects %>
+  <%= f.collection_select(:projects, @no_associated_projects, :id, :name ) %>
+  <%= f.submit :save %>
+<% end %>
+
+
+
