@@ -1,8 +1,8 @@
 class CreateBids < ActiveRecord::Migration
   def change
     create_table :bids do |t|
-      t.references :product
-      t.references :user
+      t.references :user, index:true
+      t.references :product, index:true
       t.integer :amount
 
       t.timestamps null: false

@@ -1,7 +1,7 @@
-(1..5).each do |index|
-  User.create(name: "User #{index}", email: "user#{index}@gmail.com", password: "a1b2")
-end
-
-(1..20).each do |index|
-  Product.create(title: "Product #{index}", description: "description", deadline: Date.current + 30, user_id: rand(5) + 1, minimum_bid:100)
-end
+# This file should contain all the record creation needed to seed the database with its default values.
+# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
+#
+# Examples:
+#
+#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
+#   Mayor.create(name: 'Emanuel', city: cities.first)

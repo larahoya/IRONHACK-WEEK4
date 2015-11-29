@@ -5,6 +5,7 @@ class CreateProducts < ActiveRecord::Migration
       t.string :title
       t.string :description
       t.datetime :deadline
+      t.integer :minimum_bid
 
       t.timestamps null: false
     end

@@ -1,0 +1,49 @@
+<h2><%= @user.first_name %> <%= @user.last_name %></h2>
+
+<% if @user.products.length > 0 %>
+  <div class="product-list">
+    <h4>Products</h4>
+    <% @user.sort_products.each do |product| %>
+      <div class="product">
+        <%= link_to(product.title, user_product_path(@user, product)) %>
+      </div>
+    <% end %>
+  </div>
+<% end %>
+
+<p><%= link_to('See all the products', products_path) %></p>
+<p><%= link_to('Home', '/') %></p>
+
+<% if @user == current_user %>
+
+<h4>New Product</h4>
+
+<%= flash_message %>
+
+<% if @errors %>
+<ul>
+  <% @errors.each do |error| %>
+    <li><%= error %></li>
+  <% end %>
+</ul>
+<% end %>
+
+<%= form_for [@user, @product] do |f| %>
+
+<%= f.label :title %>
+<%= f.text_field :title %>
+<br>
+<%= f.label :description %>
+<%= f.text_field :description %>
+<br>
+<%= f.label :deadline %>
+<%= f.date_field :deadline %>
+<br>
+<%= f.label :minimum_bid %>
+<%= f.text_field :minimum_bid %>
+<br>
+<%= f.submit :save %>
+
+<% end %>
+
+<% end %>

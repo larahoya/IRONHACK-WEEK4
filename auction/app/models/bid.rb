@@ -7,7 +7,7 @@ class Bid < ActiveRecord::Base
   end
 
   def valid_bid_user?(product)
-    user_id == product.user_id
+    user_id != product.user_id
   end
 
 end

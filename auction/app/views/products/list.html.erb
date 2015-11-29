@@ -1,7 +1,8 @@
 <h2>Products</h2>
-
 <ul>
 <% @products.each do |product| %>
-  <li><%= product.title %></li>
+  <% user = User.find(product.user_id) %>
+  <li><%= link_to(product.title, user_product_path(user, product)) %></li>
 <% end %>
 </ul>
+

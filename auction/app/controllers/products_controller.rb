@@ -1,21 +1,20 @@
 class ProductsController < ApplicationController
 
-  def new
-    @user = User.find(params[:user_id])
-    @product = Product.new
-  end
+  # def new
+  #   @user = User.find(params[:user_id])
+  #   @product = Product.new
+  # end
 
   def create
     @user = User.find(params[:user_id])
-    @product = Product.new entry_params
+    @product = @user.products.new entry_params
     if @product.save
       flash[:notice] = 'Product created successfully'
-      render 'show'
     else
       flash[:alert] = "Product couldn't be created"
       @errors = @entry.errors.full_messages
-      render 'new'
     end
+    redirect_to "/users/#{@user.id}"
   end
 
   def list
@@ -35,7 +34,7 @@ class ProductsController < ApplicationController
   private
 
   def entry_params
-    params.require(:product).permit(:title, :description, :deadline)
+    params.require(:product).permit(:title, :description, :deadline, :minimum_bid, :user_id)
   end
 
 end

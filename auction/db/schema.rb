@@ -11,34 +11,38 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151122162502) do
+ActiveRecord::Schema.define(version: 20151129112709) do
 
   create_table "bids", force: :cascade do |t|
-    t.integer  "product_id"
     t.integer  "user_id"
+    t.integer  "product_id"
     t.integer  "amount"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
+
+  add_index "bids", ["product_id"], name: "index_bids_on_product_id"
+  add_index "bids", ["user_id"], name: "index_bids_on_user_id"
 
   create_table "products", force: :cascade do |t|
     t.integer  "user_id"
     t.string   "title"
     t.string   "description"
     t.datetime "deadline"
+    t.integer  "minimum_bid"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
-    t.integer  "minimum_bid"
   end
 
   add_index "products", ["user_id"], name: "index_products_on_user_id"
 
   create_table "users", force: :cascade do |t|
-    t.string   "name"
+    t.string   "first_name"
+    t.string   "last_name"
     t.string   "email"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.string   "password"
+    t.string   "password_digest"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
   end
 
 end
