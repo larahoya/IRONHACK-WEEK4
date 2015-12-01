@@ -11,22 +11,28 @@
   </div>
 <% end %>
 
-<p><%= link_to('See all the products', products_path) %></p>
-<p><%= link_to('Home', '/') %></p>
 
 <% if @user == current_user %>
 
-<h4>New Product</h4>
+<% if @cart.length > 0 %>
+<div>
+<h4>My shopping cart!</h4>
 
-<%= flash_message %>
-
-<% if @errors %>
-<ul>
-  <% @errors.each do |error| %>
-    <li><%= error %></li>
-  <% end %>
-</ul>
+<% @cart.each do |product| %>
+  <%= product.title %>
+  <%= form_tag(user_ratings_path(product.user_id), method: :post) do%>
+      <%= label_tag :rate %>
+      <%= text_field_tag :rate %>
+      <%= submit_tag 'Give a rating to the seller' %>
+  <% end %> 
 <% end %>
+
+</div>
+<% end %>
+
+<div>
+
+<h4>New Product</h4>
 
 <%= form_for [@user, @product] do |f| %>
 
@@ -45,5 +51,36 @@
 <%= f.submit :save %>
 
 <% end %>
+</div>
 
+<% end %>
+
+<% if @user.reviews.count > 0 %>
+<div>
+<h4>My reviews</h4>
+
+<ul>
+<% @user.reviews.each do |review| %>
+  <% product = Product.find(review.product_id) %>
+  <li><%= product.title %> : <%= review.description %>
+
+    <%= link_to('Delete', user_product_review_path(current_user, product, review), method: :delete) %><br>
+
+    <%= form_tag(user_product_review_path(current_user, product, review), method: :patch) do%>
+      <%= label_tag :description %>
+      <%= text_field_tag :description %>
+      <%= submit_tag :edit %>
+    <% end %>
+
+  </li>   
+<% end %>
+</ul>
+
+</div>
+<% end %>
+
+<% if @user.ratings.count > 0 %>
+<div>
+  <p>Average rate: <%= @user.get_average_rate %></p>
+</div>
 <% end %>

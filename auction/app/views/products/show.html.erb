@@ -1,17 +1,6 @@
 <h2><%= @product.title %></h2>
 <p><%= @product.description %></p>
 <p><%= @product.deadline %></p>
-<%= link_to("Back to my profile", user_path(@user)) %>
-
-<%= flash_message %>
-
-<% if @errors %>
-<ul>
-  <% @errors.each do |error| %>
-    <li><%= error %></li>
-  <% end %>
-</ul>
-<% end %>
 
 <% if @product.active_bid? %>
 
@@ -32,15 +21,15 @@
 
 <% else %>
 
-  <% winner = @product.get_maximum_bid %>
-  <% user = User.find(winner.user_id) %>
+  <% winner_bid = Bid.find(@product.winner_bid_id) %>
+  <% winner_user = User.find(winner_bid.user_id) %>
   <div>
-    <p>The winner bid is <%= winner.amount %> of <%= user.first_name %>!</p>
+    <p>The winner is <%= winner_user.first_name %> with a <%= winner_bid.amount %> bid!</p>
   </div>
 
 <% end %>
 
-<% if @product.bids.any? %>
+<% if @product.bids.any? && @product.active_bid? %>
 <div>
   <ul></ul>
   <% @product.bids.each do |bid| %>
@@ -50,5 +39,29 @@
 </div>
 <% end %>
 
+<% if current_user && current_user != @user %>
 
-<%= link_to(@user.first_name, user_products_path(@user)) %>
+  <div>
+    <form action="/users/<%= @user.id %>/products/<%= @product.id %>/reviews" method='POST'>
+      
+      <label for="description">Review</label>
+      <input type='text' placeholder='add a review' name="review[description]" id="description" required>
+      
+      <input type="hidden" name="authenticity_token" value="<%=form_authenticity_token %>">
+      <button type="submit">Go!</button>
+
+    </form>
+  </div>
+
+<% end %>
+
+<% if @product.reviews.any? %>
+<div>
+  <ul></ul>
+  <% @product.reviews.each do |review| %>
+    <li><%= User.find(review.user_id).first_name %><br>
+        <%= review.description %></li>
+  <% end %>
+  </ul>
+</div>
+<% end %>

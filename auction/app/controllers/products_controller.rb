@@ -1,4 +1,5 @@
 class ProductsController < ApplicationController
+  before_action :check_bids_deadline, only: :show
 
   # def new
   #   @user = User.find(params[:user_id])
@@ -12,7 +13,7 @@ class ProductsController < ApplicationController
       flash[:notice] = 'Product created successfully'
     else
       flash[:alert] = "Product couldn't be created"
-      @errors = @entry.errors.full_messages
+      @errors = @product.errors.full_messages
     end
     redirect_to "/users/#{@user.id}"
   end

@@ -1,0 +1,10 @@
+<% if current_user %>
+  <span><%= link_to "Logout", logout_path , method: :delete %></span> - 
+  <span><%= link_to('Go to my profile', user_path(current_user)) %></span> - 
+<% else %>
+  <span><%= link_to('Sign up', new_user_path) %></span> - 
+  <span><%= link_to "Login", login_path %></span> - 
+<% end %>
+
+<span><%= link_to('See all the products', products_path) %></span> - 
+<span><%= link_to('Home', '/') %></span>

@@ -10,8 +10,6 @@ class BidsController < ApplicationController
       flash[:notice] = "Bid saved succesfully!"
     else
       flash[:alert] = "Error"
-      flash[:alert] = "Not valid amount!" if @bid.valid_bid_amount?(@product) != true
-      flash[:alert] = "Not valid user!" if @bid.valid_bid_user?(@product) != true
     end
     redirect_to(user_product_path(@user, @product))
   end

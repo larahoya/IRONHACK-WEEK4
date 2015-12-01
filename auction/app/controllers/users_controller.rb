@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+  before_action :check_bids_deadline, only: :show
 
   def new
     @user = User.new
@@ -17,6 +18,7 @@ class UsersController < ApplicationController
   def show
     @user = User.find(params[:id])
     @product = Product.new
+    @cart = @user.get_shopping_cart
   end
 
   private

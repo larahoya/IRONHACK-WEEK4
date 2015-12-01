@@ -4,14 +4,16 @@ Rails.application.routes.draw do
 
   get '/login' => 'sessions#new'
   post '/login' => 'sessions#create'
-  get '/logout' => 'sessions#destroy'
+  delete '/logout' => 'sessions#destroy'
   
   get '/products' => 'products#list'
 
   resources :users, only: [:new, :create, :show, :destroy] do
     resources :products, only: [:index, :show, :create, :destroy, :new] do
-      resources :bids, only: [:new, :create]
+      resources :bids, only: [:create]
+      resources :reviews, only: [:create, :destroy, :update]
     end
+    resources :ratings, only: [:create]
   end
 
 end
